@@ -3,149 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duck</title>
+    <title>DUCK PARAPENTE</title>
     <link href="https://fonts.cdnfonts.com/css/bebas-neue" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="logo/faviconDuck.png">
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* Styles pour l'en-tête */
-.header {
-    display: flex;                /* Utilisation de Flexbox pour l'alignement horizontal */
-	min-height: 100px;   
-    justify-content: space-between; /* Espacement entre logo et texte */
-    align-items: center;           /* Centrage vertical */
-    background-color: #e2c736;     /* Couleur de fond bleu */
-    color: #376466;                  /* Couleur du texte */
-    padding: 10px 20px;
-    margin: 0;
-}
-
-.logo-img {
-    width: 125px;                  /* Largeur du logo */
-    height: auto;                 /* Hauteur automatique pour garder le ratio */
-}
-.logo-img:hover {
-    transform: scale(1.2);
-}
-
-.header-text h1 {
-    font-size: 5em;
-    margin-bottom: 5px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: bold;
-}
-
-.header-text p {
-    font-size: 1.1em;
-    font-style: italic;
-    
-}
-
-/* Styles pour le contenu principal */
-.content {
-    background-color: #f4f4f4;    /* Couleur de fond claire */
-    flex: 1;                       /* Prend tout l'espace restant */
-    font-family: 'Poppins', sans-serif;
-}
-
-.content h1 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    text-align: center;
-    color:#8c52ff;
-    
-}
-
-.content p {
-    font-size: 1.2em;
-    padding-top: 10px;
-    
-}
-.list:before {
-    content: "\2794";
-    color:#ff66c4;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-.content img{
-    width: 40%;
-    padding:10px;
-}
-
-
-/* Styles pour le pied de page */
-.footer {
-    display: table-row;
-    bottom: 0;
-    left: 0;
-    display: flex;                /* Flexbox pour aligner les deux div sur la même ligne */
-    justify-content: center;      /* Centrer les div */
-    align-items: center;          /* Centrer verticalement */
-    background-color: #e2c736;       /* Couleur bleu pour le pied de page */
-    color: #376466;                 /* Texte en blanc */
-    padding: 20px 0;              /* Espacement intérieur */
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-}
-
-.footer-left, .footer-right {
-    width: 50%;                   /* Chaque div occupe 50% de la largeur */
-    text-align: center;           /* Centrer le texte dans chaque div */
-    font-size: 1.1em;
-}
-
-.footer-left {
-    text-align: left;             /* Alignement du texte à gauche dans la première div */
-}
-
-.footer-right {
-    text-align: right;            /* Alignement du texte à droite dans la deuxième div */
-}
-.footer-right img {
-    width: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-.footer-right img:hover {
-    transform: scale(1.2);
-}
-
-
-    </style>
 </head>
 <body>
-    <!-- En-tête avec logo -->
-    <header class="header">
+    <!-- En-tête -->
+    <header>
         <div class="logo">
-            <img src="logo/Duck.png" alt="Logo Duck" class="logo-img">
+            <img src="logo/Duck.png" alt="Logo" width="50" height="50">
         </div>
-        <div class="header-text">
-            <h1>DUCK PARAPENTE</h1>
-        </div>
+        <h1>DUCK PARAPENTE</h1>
     </header>
 
-    <!-- Contenu principal -->
+    <!-- Zone centrale -->
     <div class="content">
-        <section>
-            <h1>BIENVENUE AU DUCK PARAPENTE ! </h1>
-            <h1><img src="logo/en_tete.jpg"></h1>
-            <p>Rejoignez-nous pour des aventures aériennes inoubliables. Nous sommes un groupe passionné, partageant notre amour du vol libre et des panoramas grandioses. Que vous soyez novice ou pilote chevronné, vous trouverez votre place ici!</p>
-            <p class="list">Pour vous inscrire, rendez-vous sur le site de l'intranet de la FFVL afin d'obtenir votre licence FFVL et sélectionnez le club DUCK (N°03011).</p>
-            <p class="list">  Vous avez aussi la possibilité de nous rejoindre comme club secondaire.</p>
-            <p>Le site est en reconstruction, mais vous pouvez d'ores et déjà nous retrouver sur nos plateformes de communication habituelles.</p>
-        </section>
+        <div class="left-column">
+            <section>
+                <h1>BIENVENUE AU DUCK PARAPENTE ! </h1>
+                <span>
+                    <p>Rejoignez-nous pour des aventures aériennes inoubliables. Nous sommes un groupe passionné, partageant notre amour du vol libre et des panoramas grandioses. Que vous soyez novice ou pilote chevronné, vous trouverez votre place ici!</p>
+                    <p>Le site est en reconstruction, mais vous pouvez d'ores et déjà nous retrouver sur nos plateformes de communication habituelles.</p>
+                </span>
+                <h1><img src="logo/en_tete.jpg" class="photo"></h1>
+            </section>
+        </div>
+        <div class="right-column">
+            <div class="contenu">
+                <h1 class="PriseLicence">PRENDRE SA LICENCE</h1>
+                <img src="logo/qrcode.png" class="qrcode">
+                <p class="list">SELECTIONNER LE CLUB DUCK (N°03011).</p>
+            </div>
+        </div>
     </div>
 
-    <!-- Pied de page -->
-    <footer class="footer">
+    <!-- Footer -->
+    <footer>
         <div class="footer-left">
             <ul style='list-style-type: none;'>
                 <li><b>Fréquence du club:</b> 161.325</li>
